@@ -80,7 +80,7 @@
             {
                 "language": "gbz80",
                 "scopeName": "source.asm.gbz80",
-                "path": "./syntaxes/rgbds-asm.tmLanguage"
+                "path": "./syntaxes/rgbds-asm.tmLanguage.json"
             }
         ],
         "configurationDefaults": {
