@@ -2,7 +2,7 @@
     "name": "rgbds-z80",
     "displayName": "RGBDS Z80",
     "description": "Language service for RGBDS GB Z80.",
-    "version": "4.0.2",
+    "version": "4.0.3",
     "publisher": "donaldhays",
     "engines": {
         "vscode": "^1.85.0"
@@ -131,6 +131,24 @@
                             }
                         },
                         "default": {}
+                    },
+                    "rgbdsz80.files.include": {
+                        "type": "string",
+                        "default": "**/*.{a80,asm,inc,s}",
+                        "description": "Files to include and work with. If you, or your macro-assembler using a different conventions of source file extensions then change it here."
+                      },
+                      "rgbdsz80.files.exclude": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "default": null,
+                        "description": "Choose files or directories to exclude (e.g '**/*.{lst}')."
+                      },
+                      "rgbdsz80.seekSymbolsThroughWorkspace": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "If true, extension will crawl through all workspace files to document all symbols. Otherwise, only includes are taken into account."
                     }
                 }
             }
